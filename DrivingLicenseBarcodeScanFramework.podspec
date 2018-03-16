@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   # Author Metadata #
 
-  s.author             = { "Arnab Bhattacharyya" => "animesh@optimizeitsystems.com" }
+  s.author             = { "Arnab Bhattacharyya" => "arnab@optimizeitsystems.com" }
 
 
   # Platform Specifics #
