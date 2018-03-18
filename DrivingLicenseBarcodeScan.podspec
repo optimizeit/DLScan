@@ -4,10 +4,10 @@ Pod::Spec.new do |s|
 
   # Spec Metadata #
 
-  s.name         = "DrivingLicenseBarcodeScanFramework"
+  s.name         = "DrivingLicenseBarcodeScan"
   s.version      = "1.0"
   s.summary      = "DL Scan data from DL cards"
-  s.description  = "DrivingLicenseBarcodeScanFramework SDK"
+  s.description  = "DrivingLicenseBarcodeScan SDK"
   s.homepage     = "http://www.optimizeitsystems.com"
 
 
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios
   s.ios.deployment_target = "9.0"
-  s.ios.vendored_frameworks = "DrivingLicenseBarcodeScanFramework.framework"
+  s.ios.vendored_frameworks = "DrivingLicenseBarcodeScan.framework"
 
 
   # Source Location #
