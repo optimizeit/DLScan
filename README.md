@@ -17,47 +17,23 @@ import DrivingLicenceScan
 
 Add DrivingLicenseScanDelegate
 
-Write code in the following manner 
-	let objIDScan = IDScanModule()
-        objIDScan.delegate = self
-        let btn1 = UIButton()
-        btn1.setTitle("First", for: .normal)
-        btn1.setTitleColor(UIColor.blue, for: .normal)
-        btn1.tag = 0
-        btn1.backgroundColor = UIColor.red
+Write code in the following manner in any action
 
-        let btn2 = UIButton()
-        btn2.setTitle("First", for: .normal)
-        btn2.setTitleColor(UIColor.blue, for: .normal)
-        btn2.tag = 1
-        btn2.backgroundColor = UIColor.red
-
-        let backGroundColor = UIColor.gray
-
-        var dicTemp = [String : Any]()
-        dicTemp = ["frontBtn" : btn1,"backBtn" : btn2,"backGroundColor" : backGroundColor]
-        
-        
-        objIDScan.showIDScanVC(dataDic: dicTemp)
+	let obj = ScanLicensebackVC()
+ 	obj.delegate = self
+        obj.bringDrivingicenseBarcodeScanVC()
 
 Use the following delegate to get the call back 
 
-func bringIDScanVC(IDScanView: UIView)
+    func showDrivingicenseBarcodeScanVC(scanLicensebackVC : ScanLicensebackVC)
     {
-        IDScanView.frame = self.view.frame
-        self.view.addSubview(IDScanView)
+        self.present(scanLicensebackVC, animated: true, completion: nil)
     }
     
-    func callBackFromIDScan(actionName: String, imageArray: [UIImage], drivingLicenceModel : DrivingLicenceModel)
+    func drivingLicenseScanData(mappingDictionary : NSMutableDictionary)
     {
-        
+        // Get all the data which come from the barcode scan.
     }
-
-
-
-Optional for skip and continue 
-
-func exitButtonPress()
 
 
 
