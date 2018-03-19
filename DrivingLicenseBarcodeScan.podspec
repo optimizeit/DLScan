@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   # Spec Metadata #
 
   s.name         = "DrivingLicenseBarcodeScan"
-  s.version      = "1.1"
+  s.version      = "1.2"
   s.summary      = "DrivingLicenseBarcodeScan"
   s.description  = "DrivingLicenseBarcodeScan SDK"
   s.homepage     = "http://www.optimizeitsystems.com"
